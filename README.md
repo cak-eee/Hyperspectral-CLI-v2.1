@@ -36,4 +36,4 @@ Hyperspectral-CLI, yüksek boyutlu spektral verilerin (Hyperspectral Imagery) i�
 
 👨‍💻 Geliştirici
 
-cak-eee
+cak-eee*
