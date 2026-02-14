@@ -2,15 +2,23 @@
 
 Hyperspectral-CLI, yüksek boyutlu spektral verilerin (Hyperspectral Imagery) işlenmesi ve sınıflandırılması için geliştirilmiş, terminal tabanlı interaktif bir analiz aracıdır. Özellikle Indian Pines veri seti üzerinde PCA ve SVM algoritmalarını kullanarak yüksek doğruluklu sonuçlar üretmek üzere optimize edilmiştir.
 
-🛠️ Teknik Özellikler & Mimari
+Bu proje, uzaydan (AVIRIS sensörü ile) alınan Indian Pines bölgesine ait yüksek boyutlu spektral verilerin yapay zeka ile sınıflandırılmasını sağlar. Analiz süreci ve sonuçların anlamı aşağıda adım adım açıklanmıştır:
 
--Boyut İndirgeme (PCA): 224 spektral banttan oluşan ağır veri küpü, en yüksek varyansı temsil eden ilk 30 temel bileşene indirgenerek işlem hızı optimize edilmiştir.
+🔍 Analiz Süreci (Pipeline)
 
--Sınıflandırma (SVM): Uzaktan algılamada doğrusal olmayan ayrıştırma kapasitesine sahip RBF Kernel SVM algoritması kullanılmıştır.
+-Veri Girişi: 224 farklı spektral banttan (gözle görülmeyen ışık imzaları) oluşan veri küpü sisteme yüklenir.
 
--Modern Terminal UI: rich kütüphanesi entegrasyonu ile progress barlar ve dinamik tablolar sunan bir CLI oluşturulmuştur.
+-PCA (Temel Bileşen Analizi): Veri setindeki 224 bant, bilgi kaybı minimize edilerek en anlamlı 30 bileşene indirgenir. Bu işlem, "Boyutun Laneti" (Curse of Dimensionality) problemini çözer ve işlem hızını artırır.
 
--Donanım Avantajı: Yazılım, Sapphire Nitro+ RX 6900 XT GPU ve 48GB RAM kapasiteli yüksek performanslı bir sistemde geliştirilmiştir.
+-SVM (Destek Vektör Makineleri): İndirgenmiş veriler, RBF (Radial Basis Function) çekirdeği kullanılarak eğitilir. Bu algoritma, pikseller arasındaki kimyasal benzerliği matematiksel olarak gruplandırır.
+
+📊 Görseller Ne İfade Ediyor?
+
+-SOLDAKİ HARİTA (Zemin Gerçeği / Ground Truth): Bu, arazinin "cevap anahtarı"dır. Uzmanlar tarafından sahada doğrulanmış gerçek ürün türlerini (mısır, soya fasulyesi, orman vb.) temsil eder. Renklerin bloklar halinde düzgün olmasının sebebi, gerçek tarlaların bir bütün olmasıdır.
+
+-SAĞDAKİ HARİTA (SVM Tahmini): Yapay zekanın pikselleri analiz ederek kendi oluşturduğu haritadır.
+
+-Noktalı Pikseller (Kumlanma): Sağdaki haritada görülen pikselli yapı, yapay zekanın iki benzer bitki türü (örneğin mısır ile soyanın spektral imzası) arasında kararsız kaldığı veya yanıldığı noktaları gösterir.
 
 🚀 Hızlı Başlangıç (Quick Start)
 
@@ -40,4 +48,4 @@ Hyperspectral-CLI, yüksek boyutlu spektral verilerin (Hyperspectral Imagery) i�
 
 👨‍💻 Geliştirici
 
-cak-eee*
+cak-eee
