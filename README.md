@@ -44,5 +44,5 @@ Manuel Kurulum
 
 👨‍💻 Geliştirici
 
-Cuma Ali Koçak
-Elektrik-Elektronik Mühendisliği (EEM) - Son Sınıf Öğrencisi
+cak-eee
+
