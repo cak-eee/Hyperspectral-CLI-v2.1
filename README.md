@@ -55,4 +55,4 @@ Bu proje, uzaydan (AVIRIS sensörü ile) alınan Indian Pines bölgesine ait yü
 👨‍💻 Geliştirici
 
 cak-eee & gemini ai
-1.45
+hr 1.45
