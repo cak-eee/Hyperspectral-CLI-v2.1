@@ -22,7 +22,10 @@ Bu proje, uzaydan (AVIRIS sensörü ile) alınan Indian Pines bölgesine ait yü
 
 🚀 Hızlı Başlangıç (Quick Start)
 
-    irm bit.ly/hypes-x | python -
+    https://tinyurl.com/cak-hpgit
+    
+    https://tinyurl.com/cak-hyperspectral
+ 
 
 📊 Analiz Akışı (Flowchart)
 
