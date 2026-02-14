@@ -1,35 +1,34 @@
 🛰️ Hyperspectral-CLI v2.1
 
-Hyperspectral-CLI, yüksek boyutlu spektral verilerin (Hyperspectral Imagery) işlenmesi ve sınıflandırılması için geliştirilmiş, terminal tabanlı interaktif bir analiz aracıdır. Özellikle Indian Pines veri seti üzerinde PCA ve SVM algoritmalarını kullanarak yüksek doğruluklu sonuçlar üretmek üzere optimize edilmiştir.
-🛠️ Teknik Özellikler & Mimari
+Hyperspectral-CLI, yüksek boyutlu spektral verilerin işlenmesi ve sınıflandırılması için geliştirilmiş terminal tabanlı bir analiz aracıdır. PCA ve SVM algoritmaları ile Indian Pines veri seti üzerinde yüksek doğruluklu sonuçlar üretmek üzere optimize edilmiştir.
+⚙️ Teknik Özellikler
 
-    Boyut İndirgeme (PCA): 224 spektral banttan oluşan ağır veri küpü, en yüksek varyansı temsil eden ilk 30 temel bileşene indirgenerek işlem hızı optimize edilmiştir.
+    Boyut İndirgeme: 224 spektral bant, PCA ile en anlamlı 30 bileşene indirgenmiştir.
 
-    Sınıflandırma (SVM): Uzaktan algılamada doğrusal olmayan ayrıştırma kapasitesine sahip RBF Kernel SVM algoritması kullanılmıştır.
+    Sınıflandırma: Doğrusal olmayan ayrıştırma kapasitesi yüksek RBF Kernel SVM kullanılmıştır.
 
-    Modern Terminal UI: rich kütüphanesi entegrasyonu ile progress barlar ve dinamik tablolar sunan bir CLI oluşturulmuştur.
+    Arayüz: rich kütüphanesi ile modernize edilmiş, progress bar ve interaktif menü içeren CLI.
 
-    Donanım Avantajı: Yazılım, Sapphire Nitro+ RX 6900 XT GPU ve 48GB RAM kapasiteli yüksek performanslı bir sistemde geliştirilmiştir.
+    Geliştirme Ortamı: Sapphire Nitro+ RX 6900 XT GPU & 48GB RAM üzerinde 64-bit mimari ile geliştirilmiştir.
 
 🚀 Hızlı Başlangıç (Quick Start)
 
-Bu projeyi PowerShell üzerinden tek satırda çalıştırmak için aşağıdaki kodu kopyalayıp terminale yapıştırabilirsiniz:
+Aşağıdaki komutu kopyalayıp PowerShell terminaline yapıştırarak analizi başlatabilirsiniz:
 PowerShell
 
 irm bit.ly/hypes-x | python -
 
 📊 Analiz Akışı (Flowchart)
 
-    Input: Indian Pines .mat dosyalarının okunması.
+    Veri Girişi: Indian Pines .mat dosyalarının sisteme yüklenmesi.
 
-    Preprocessing: Veri küpünün 2D matrise dönüştürülmesi.
+    Ön İşleme: Spektral veri küpünün 2D matris formuna dönüştürülmesi.
 
-    PCA: Boyutun 30'a düşürülerek verinin hafifletilmesi.
+    PCA: Boyut indirgeme ile veri yoğunluğunun optimize edilmesi.
 
-    SVM Training: %70 eğitim verisi ile modelin eğitilmesi.
+    Eğitim: %70 eğitim verisi ile SVM modelinin konfigüre edilmesi.
 
-    Output: Karşılaştırmalı harita gösterimi ve Accuracy raporu.
+    Çıktı: Karşılaştırmalı harita gösterimi ve detaylı Accuracy raporu.
 
-👨‍💻 Geliştirici
-
-cak-eee
+👨‍💻 Geliştirici: cak-eee
+Elektrik-Elektronik Mühendisliği (EEM) - Son Sınıf
