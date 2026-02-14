@@ -52,6 +52,18 @@ Bu proje, uzaydan (AVIRIS sensörü ile) alınan Indian Pines bölgesine ait yü
  
  *v2.4	Interpretive Report	Analiz sonuçlarını düşük seviyede (low-level) açıklayan "Anlamlandırılmış Rapor" sistemi terminale entegre edildi.
 
+  **🛠️ 2.4.1 (setup.py)
+
+-Unicode Kriz Yönetimi: rich kütüphanesinin pakete dahil edilmeyen Unicode dosyaları nedeniyle oluşan ModuleNotFoundError hatasını, PyInstaller'a gizli kütüphaneleri (hidden-import) zorla tanıtarak çözüldü.
+
+-Gereksiz Ağırlıklardan Kurtulma: Sistemindeki devasa torch ve bitsandbytes kütüphanelerinin EXE'ye "salça" olmasını engellendi; böylece hem paketleme süresi kısaldı hem de DLL çakışmaları bitti.
+
+-Otomasyon (setup.py): Her seferinde terminale uzun komutlar yazmak yerine, projenin "üretim hattı" olan setup.py dosyasını oluşturup süreci tek tıkla hale getirildi.
+
+-Vitrini Mühürleme: ASCII sanatındaki o can sıkıcı SyntaxWarning hatasını r""" ile tarihe gömdük ve artık terminalin her açılışında kusursuz bir görsellik elde edildi.
+
+-Anlamlı Raporlama: %23 başarının aslında neden bir "başarı" olduğunu anlatan düşük seviyeli teknik raporu terminale gömüldü.
+
 👨‍💻 Geliştirici
 
 cak-eee & gemini ai
