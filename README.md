@@ -1,15 +1,16 @@
 🛰️ Hyperspectral-CLI v2.1
 
 Hyperspectral-CLI, yüksek boyutlu spektral verilerin (Hyperspectral Imagery) işlenmesi ve sınıflandırılması için geliştirilmiş, terminal tabanlı interaktif bir analiz aracıdır. Özellikle Indian Pines veri seti üzerinde PCA ve SVM algoritmalarını kullanarak yüksek doğruluklu sonuçlar üretmek üzere optimize edilmiştir.
+
 🛠️ Teknik Özellikler & Mimari
 
-Boyut İndirgeme (PCA): 224 spektral banttan oluşan ağır veri küpü, en yüksek varyansı temsil eden ilk 30 temel bileşene indirgenerek işlem hızı optimize edilmiştir.
+-Boyut İndirgeme (PCA): 224 spektral banttan oluşan ağır veri küpü, en yüksek varyansı temsil eden ilk 30 temel bileşene indirgenerek işlem hızı optimize edilmiştir.
 
-Sınıflandırma (SVM): Uzaktan algılamada doğrusal olmayan ayrıştırma kapasitesine sahip RBF Kernel SVM algoritması kullanılmıştır.
+-Sınıflandırma (SVM): Uzaktan algılamada doğrusal olmayan ayrıştırma kapasitesine sahip RBF Kernel SVM algoritması kullanılmıştır.
 
-Modern Terminal UI: rich kütüphanesi entegrasyonu ile progress barlar ve dinamik tablolar sunan bir CLI oluşturulmuştur.
+-Modern Terminal UI: rich kütüphanesi entegrasyonu ile progress barlar ve dinamik tablolar sunan bir CLI oluşturulmuştur.
 
-Donanım Avantajı: Yazılım, Sapphire Nitro+ RX 6900 XT GPU ve 48GB RAM kapasiteli yüksek performanslı bir sistemde geliştirilmiştir.
+-Donanım Avantajı: Yazılım, Sapphire Nitro+ RX 6900 XT GPU ve 48GB RAM kapasiteli yüksek performanslı bir sistemde geliştirilmiştir.
 
 🚀 Hızlı Başlangıç (Quick Start)
 
@@ -17,15 +18,15 @@ Donanım Avantajı: Yazılım, Sapphire Nitro+ RX 6900 XT GPU ve 48GB RAM kapasi
 
 📊 Analiz Akışı (Flowchart)
 
-Input: Indian Pines .mat dosyalarının okunması.
+-Input: Indian Pines .mat dosyalarının okunması.
 
-Preprocessing: Veri küpünün 2D matrise dönüştürülmesi.
+-Preprocessing: Veri küpünün 2D matrise dönüştürülmesi.
 
-PCA: Boyutun 30'a düşürülerek verinin hafifletilmesi.
+-PCA: Boyutun 30'a düşürülerek verinin hafifletilmesi.
 
-SVM Training: %70 eğitim verisi ile modelin eğitilmesi.
+-SVM Training: %70 eğitim verisi ile modelin eğitilmesi.
 
-Output: Karşılaştırmalı harita gösterimi ve Accuracy raporu.
+-Output: Karşılaştırmalı harita gösterimi ve Accuracy raporu.
 
 👨‍💻 Geliştirici
 
