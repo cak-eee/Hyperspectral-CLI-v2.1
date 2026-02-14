@@ -1,4 +1,4 @@
-🛰️ Hyperspectral-CLI v2.1
+🛰️ Hyperspectral-CLI v2.4
 
 Hyperspectral-CLI, yüksek boyutlu spektral verilerin (Hyperspectral Imagery) işlenmesi ve sınıflandırılması için geliştirilmiş, terminal tabanlı interaktif bir analiz aracıdır. Özellikle Indian Pines veri seti üzerinde PCA ve SVM algoritmalarını kullanarak yüksek doğruluklu sonuçlar üretmek üzere optimize edilmiştir.
 
@@ -45,6 +45,12 @@ Bu proje, uzaydan (AVIRIS sensörü ile) alınan Indian Pines bölgesine ait yü
  *v2.0	Rich UI Integration	rich kütüphanesi ile progress barlar ve tablolar eklendi.
  
  *v2.1	Interactive & IRM	Çıkış döngüsü (Loop) eklendi, geliştirici adı cak-eee olarak güncellendi.
+ 
+ *v2.2	Hardware & Export	psutil ile donanım bilgisi çekme özelliği ve analizi PNG olarak kaydetme yeteneği eklendi.
+ 
+ *v2.3	Syntax & UI Polish	ASCII sanatı raw string yapılarak SyntaxWarning hatası giderildi. PNG altına teknik açıklama eklendi.
+ 
+ *v2.4	Interpretive Report	Analiz sonuçlarını düşük seviyede (low-level) açıklayan "Anlamlandırılmış Rapor" sistemi terminale entegre edildi.
 
 👨‍💻 Geliştirici
 
