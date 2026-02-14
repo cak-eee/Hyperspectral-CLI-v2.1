@@ -29,9 +29,13 @@ Hyperspectral-CLI, yüksek boyutlu spektral verilerin (Hyperspectral Imagery) i�
 -Output: Karşılaştırmalı harita gösterimi ve Accuracy raporu.
 
 🛠️ Versiyon	Başlık	Değişiklikler
+ 
  *v1.0	Initial Commit	PCA ve SVM algoritmalarının temel entegrasyonu.
+ 
  *v1.1	Path & Arch Fix	64-bit mimari optimizasyonu ve PATH düzeltmeleri.
+ 
  *v2.0	Rich UI Integration	rich kütüphanesi ile progress barlar ve tablolar eklendi.
+ 
  *v2.1	Interactive & IRM	Çıkış döngüsü (Loop) eklendi, geliştirici adı cak-eee olarak güncellendi.
 
 👨‍💻 Geliştirici
